@@ -6,4 +6,7 @@ export function handleHome(navigate) {
     navigate("/cart");
   }
   
+  export function handleCadastro(navigate) {
+    navigate("/cadastro")
+  }
   

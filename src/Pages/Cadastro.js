@@ -13,7 +13,8 @@ export default function Cadastro (props){
   }
   const handleClick = (event)=>{
     event.preventDefault()
-    console.log(formulario);
+    props.setFrutas([...props.frutas, {...formulario, id:Date.now().toString()}])
+    setFormulario({name:"", url:"", price:""})
   }
  
  
